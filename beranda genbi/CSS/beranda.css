@@ -1,0 +1,251 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    width: 100%;
+    height: 3457px;
+    background: #F0F0F0;
+}
+/* Navbar */
+nav {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/P1010339\ 1.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    width: 58%;
+    justify-content: space-between;
+    padding-top: 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-size: 1em;
+    padding-right: 20px;
+}
+nav ul li a:hover {
+    color: gray;
+}
+.judul {
+    position: absolute;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    top:300px;
+    left: 100px;
+    color: white;
+}
+.judul h1 {
+    font-size: 56px;
+}
+.judul p {
+    font-size: 16px;
+}
+
+/* Sejarah GenBI */
+.container {
+    height: 756px;
+    /* min-height: 100vh; */
+    background: linear-gradient(180deg, #26648B 49.48%, #FFFFFF 100%);
+
+}
+.box-sejarah, .box-kegiatan {
+    position: absolute;
+    width: 533px;
+    height: 103px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    background: #FFE3B3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 0 0 20px;
+    right: 0;
+    padding-left: 43px;
+    margin-top: 71px;
+}
+.box-foto {
+    width: 82%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 63px;
+    margin: 0 auto;
+    padding-top: 170px;
+}
+.box-foto img {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+}
+.ket-sej {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+.ket-sej button, .ket-event button, .ket-berita button {
+    width: 202px;
+    height: 41px;
+    background: #FFE3B3;
+    border-radius: 30px;
+    color: #26648B;
+    margin-right: auto;
+    margin-bottom: -35px;
+    font-weight: 700;
+    border: 2px solid #FFE3B3;
+    cursor: pointer;
+}
+.event {
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    margin-top: 115px;
+}
+
+/* Event */ 
+.swiper {
+    width: 80%;
+    height: 402px;
+    margin-top: 0;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    background: #F0F0F0;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    column-gap: 63px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+    border-radius: 30px;
+}
+.ket-event, .ket-berita {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+    text-align: start;
+}
+.ket-event p, .ket-berita p{
+    margin-bottom: 10px;
+}
+.ket-event p:nth-child(2), .ket-berita p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 400;
+}
+.ket-event button, .ket-berita button {
+    margin-top: 40px;
+}
+.swiper-button-next {
+    font-color: black;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    color: black;
+}
+
+/* Berita */
+.box-berita {
+    width:100%;
+    min-height: 100vh;
+    place-items: center;
+    background-color: #26648B;
+    border: 2px solid black; 
+    clip-path: polygon(0% 0%, 100% 30%, 100% 70%, 0% 100%);   
+}
+.berita .swiper-slide {
+    background: transparent;
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: 700;
+    color: white;
+}
+.box-berita h2 {
+    position: block;
+    width: 533px;
+    height: 103px;
+    display: flex;
+    align-items: center;
+    font-size: 33px;
+    background: #FFE3B3;
+    border-radius: 0 20px 20px 0;
+    margin-right: auto;
+    padding-left: 220px;
+    margin-top:100px; 
+    margin-bottom: -20px;   
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-weight: 800;
+}
+
+/* Galeri Kegiatan */
+.box-kegiatan {
+    margin-top: -50px;
+}
+.kegiatan {
+    margin-top: 100px;
+    width: 100%;
+    min-height: 80vh;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+.kegiatan .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 750px;
+    height: 300px;
+}
+.kegiatan .swiper-slide img {
+    display: block;
+    width: 100%;
+    padding-top: 220px;
+}
+
+/* Footer */
+.footer {
+    width: 95%;
+    display: flex;
+    flex-direction:row-reverse;
+    padding-top: 180px;
+    padding-bottom: 30px;
+}
+.logo-footer {
+    padding-top: 70px;
+}
+.background-footer {
+    position: relative;
+    width: 75%;
+    height: 276px;
+    margin-right: auto;
+    background: #26648B;
+    border-radius: 0 20px 20px 0;
+}
